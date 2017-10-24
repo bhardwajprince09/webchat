@@ -1,0 +1,100 @@
+<html>
+<head>
+
+<p id="demo"><font color="black"></font></p>
+<style>
+html, body {
+    background: #e5e5e5;
+    font-family: 'Lato', sans-serif;
+    margin: 0px auto;
+}
+
+.back img {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255,255,255,0.98);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    margin-left: 15px;
+    margin-top:150px;
+    }
+.back:active {
+    background: rgba(255,255,255,0.2);
+
+}
+div.abc
+{margin:5px;
+padding:15px;
+text-align:center;
+top:40px;
+margin-top:0px;
+}
+div.def
+{
+padding:15px;
+
+}
+
+</style>
+<script>
+
+document.getElementById("demo").innerHTML=d;
+function validateform()
+{
+
+var x=document.forms["myform"]["fname"].value;
+if(x=="")
+{
+alert("empty field not accepted");
+return false;
+}
+var y=document.forms["myform"]["mail"].value;
+if(y=="")
+{
+alert("empty field not accepted");
+return false;
+}
+var z=document.forms["myform"]["pwd"].value;
+if(z=="")
+{
+alert("empty field not accepted");
+return false;
+}
+}
+
+
+</script>
+</head>
+<h1>Account Setting</h1>
+<h2>Your Profile</h2>
+<hr>
+
+<form name="frm1" onsubmit="return validateform()">
+<div class="def">
+<b>Inbox</b><br><br>
+<b>Sent</b><br><br>
+<b>Drafts</b><br><br>
+<b>Trash</b><br><br>
+<b>Chat</b><br><br>
+
+<hr width="100" align="left"><br>
+<b>Task</b>
+</div>
+
+<div class="back"><a href="p2.html"><img src="https://i.imgur.com/DY6gND0.png" draggable="false"/></a></div>
+<div class="abc">
+<h3>General Info
+<h4>FirstName:<input type="text" name="fname"> LastName:<input type="text" name="lname" align="right"></h4>
+<h4>E-MAIL:<input type="email" name="mail"></h4>
+<h3>Change Password
+<h4>Current Password:<input type="password" name="pwd">
+New Password:<input type="password" name="pwd">Confirm Password:<input type="password" name="cpwd"></h4>
+<h4><a href="xyz.html"><input type="submit" value="SAVE"></a></h4><br><br>
+
+</div>
+</body>
